@@ -6,6 +6,15 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		2528DFB02DBD475700DD2329 /* FirebaseAnalyticsWithoutAdIdSupport in Frameworks */ = {isa = PBXBuildFile; productRef = 2528DFAF2DBD475700DD2329 /* FirebaseAnalyticsWithoutAdIdSupport */; };
+		2528DFB22DBD475700DD2329 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 2528DFB12DBD475700DD2329 /* FirebaseAuth */; };
+		2528DFB42DBD475700DD2329 /* FirebaseCore in Frameworks */ = {isa = PBXBuildFile; productRef = 2528DFB32DBD475700DD2329 /* FirebaseCore */; };
+		2528DFB62DBD475700DD2329 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 2528DFB52DBD475700DD2329 /* FirebaseFirestore */; };
+		2528DFB82DBD475700DD2329 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 2528DFB72DBD475700DD2329 /* FirebaseStorage */; };
+		2528DFE22DC1296B00DD2329 /* SessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2528DFE12DC1295F00DD2329 /* SessionManager.swift */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		2528DF8C2DBD41AC00DD2329 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -27,11 +36,41 @@
 		2528DF7B2DBD41A900DD2329 /* Map.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Map.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2528DF8B2DBD41AC00DD2329 /* MapTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MapTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2528DF952DBD41AC00DD2329 /* MapUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MapUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2528DFE12DC1295F00DD2329 /* SessionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		2528DFAC2DBD41F600DD2329 /* Exceptions for "Map" folder in "MapTests" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				"GoogleService-Info.plist",
+			);
+			target = 2528DF8A2DBD41AC00DD2329 /* MapTests */;
+		};
+		2528DFAD2DBD41F600DD2329 /* Exceptions for "Map" folder in "MapUITests" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				"GoogleService-Info.plist",
+			);
+			target = 2528DF942DBD41AC00DD2329 /* MapUITests */;
+		};
+		2528DFC72DBE386900DD2329 /* Exceptions for "Map" folder in "Map" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 2528DF7A2DBD41A900DD2329 /* Map */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		2528DF7D2DBD41A900DD2329 /* Map */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				2528DFC72DBE386900DD2329 /* Exceptions for "Map" folder in "Map" target */,
+				2528DFAC2DBD41F600DD2329 /* Exceptions for "Map" folder in "MapTests" target */,
+				2528DFAD2DBD41F600DD2329 /* Exceptions for "Map" folder in "MapUITests" target */,
+			);
 			path = Map;
 			sourceTree = "<group>";
 		};
@@ -45,6 +84,11 @@
 			path = MapUITests;
 			sourceTree = "<group>";
 		};
+		2528DFD82DC1217000DD2329 /* Users */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Users;
+			sourceTree = "<group>";
+		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +96,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2528DFB02DBD475700DD2329 /* FirebaseAnalyticsWithoutAdIdSupport in Frameworks */,
+				2528DFB62DBD475700DD2329 /* FirebaseFirestore in Frameworks */,
+				2528DFB42DBD475700DD2329 /* FirebaseCore in Frameworks */,
+				2528DFB82DBD475700DD2329 /* FirebaseStorage in Frameworks */,
+				2528DFB22DBD475700DD2329 /* FirebaseAuth in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -75,6 +124,8 @@
 		2528DF722DBD41A900DD2329 = {
 			isa = PBXGroup;
 			children = (
+				2528DFE12DC1295F00DD2329 /* SessionManager.swift */,
+				2528DFD82DC1217000DD2329 /* Users */,
 				2528DF7D2DBD41A900DD2329 /* Map */,
 				2528DF8E2DBD41AC00DD2329 /* MapTests */,
 				2528DF982DBD41AC00DD2329 /* MapUITests */,
@@ -109,9 +160,15 @@
 			);
 			fileSystemSynchronizedGroups = (
 				2528DF7D2DBD41A900DD2329 /* Map */,
+				2528DFD82DC1217000DD2329 /* Users */,
 			);
 			name = Map;
 			packageProductDependencies = (
+				2528DFAF2DBD475700DD2329 /* FirebaseAnalyticsWithoutAdIdSupport */,
+				2528DFB12DBD475700DD2329 /* FirebaseAuth */,
+				2528DFB32DBD475700DD2329 /* FirebaseCore */,
+				2528DFB52DBD475700DD2329 /* FirebaseFirestore */,
+				2528DFB72DBD475700DD2329 /* FirebaseStorage */,
 			);
 			productName = Map;
 			productReference = 2528DF7B2DBD41A900DD2329 /* Map.app */;
@@ -195,6 +252,9 @@
 			);
 			mainGroup = 2528DF722DBD41A900DD2329;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				2528DFAE2DBD442C00DD2329 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 2528DF7C2DBD41A900DD2329 /* Products */;
 			projectDirPath = "";
@@ -236,6 +296,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2528DFE22DC1296B00DD2329 /* SessionManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -396,8 +457,12 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Map/Preview Content\"";
+				DEVELOPMENT_TEAM = 6QQ2GFD9W8;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Map/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "We need access to your camera to upload issue photos.";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "We need your location to attach it to the reported issue.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -408,7 +473,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.urban.site.Map;
+				PRODUCT_BUNDLE_IDENTIFIER = com.urban.site;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -424,8 +489,12 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Map/Preview Content\"";
+				DEVELOPMENT_TEAM = 6QQ2GFD9W8;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Map/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "We need access to your camera to upload issue photos.";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "We need your location to attach it to the reported issue.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -436,7 +505,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.urban.site.Map;
+				PRODUCT_BUNDLE_IDENTIFIER = com.urban.site;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -552,6 +621,45 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		2528DFAE2DBD442C00DD2329 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 11.12.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		2528DFAF2DBD475700DD2329 /* FirebaseAnalyticsWithoutAdIdSupport */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2528DFAE2DBD442C00DD2329 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalyticsWithoutAdIdSupport;
+		};
+		2528DFB12DBD475700DD2329 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2528DFAE2DBD442C00DD2329 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		2528DFB32DBD475700DD2329 /* FirebaseCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2528DFAE2DBD442C00DD2329 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseCore;
+		};
+		2528DFB52DBD475700DD2329 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2528DFAE2DBD442C00DD2329 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		2528DFB72DBD475700DD2329 /* FirebaseStorage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2528DFAE2DBD442C00DD2329 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseStorage;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 2528DF732DBD41A900DD2329 /* Project object */;
 }
